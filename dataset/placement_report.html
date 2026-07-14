@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Campus Placement Report</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',Calibri,sans-serif; background:#f4f1eb; color:#2d2a24;
+         padding:32px 24px; max-width:960px; margin:0 auto; }
+  .report-header { background:linear-gradient(135deg,#2d2a24 0%,#3a3630 100%);
+    color:#f8f4ed; padding:36px 32px; border-radius:12px; margin-bottom:28px; }
+  .report-header h1 { font-size:28px; font-weight:700; margin-bottom:6px; }
+  .report-header p  { font-size:14px; color:#c4cebc; }
+  .summary-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:16px; margin-bottom:28px; }
+  .card { background:#fff; border-radius:10px; padding:20px;
+    box-shadow:0 2px 8px rgba(45,42,36,.08); border-left:4px solid #8e9a7c; }
+  .card.accent { border-left-color:#b26b4a; }
+  .card.warm   { border-left-color:#d4956f; }
+  .card.dark   { border-left-color:#2d2a24; }
+  .card .label  { font-size:12px; text-transform:uppercase; letter-spacing:.5px;
+                  color:#6e665c; margin-bottom:6px; }
+  .card .value  { font-size:28px; font-weight:700; color:#2d2a24; }
+  .card .detail { font-size:13px; color:#6e665c; margin-top:4px; }
+  section { background:#fff; border-radius:10px; padding:24px; margin-bottom:24px;
+            box-shadow:0 2px 8px rgba(45,42,36,.08); }
+  section h2 { font-size:18px; font-weight:600; color:#2d2a24; margin-bottom:16px;
+               padding-bottom:8px; border-bottom:2px solid #e0d6c7; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  thead th { background:#2d2a24; color:#f8f4ed; padding:10px 14px;
+             text-align:left; font-weight:600; font-size:13px; }
+  thead th:first-child { border-radius:6px 0 0 0; }
+  thead th:last-child  { border-radius:0 6px 0 0; }
+  tbody td { padding:9px 14px; border-bottom:1px solid #e0d6c7; }
+  tbody tr:nth-child(even) { background:#faf6f0; }
+  tbody tr:hover { background:#ede8dc; }
+  .footer { text-align:center; font-size:12px; color:#6e665c;
+            margin-top:32px; padding-top:16px; border-top:1px solid #e0d6c7; }
+</style></head>
+<body>
+<div class="report-header">
+  <h1>Campus Placement Report</h1>
+  <p>Analysis of 250 placement records</p>
+</div>
+
+<div class="summary-cards">
+  <div class="card">
+    <div class="label">Total Students</div>
+    <div class="value">250</div>
+    <div class="detail">placement records analysed</div>
+  </div>
+  <div class="card accent">
+    <div class="label">Highest Package</div>
+    <div class="value">16.10 LPA</div>
+    <div class="detail">Sneha Gupta</div>
+  </div>
+  <div class="card">
+    <div class="label">Branches</div>
+    <div class="value">6</div>
+    <div class="detail">branches participated</div>
+  </div>
+  <div class="card warm">
+    <div class="label">Companies</div>
+    <div class="value">5</div>
+    <div class="detail">recruiting companies</div>
+  </div>
+</div>
+
+<section>
+  <h2>Average Package by Branch</h2>
+  <table>
+  <thead><tr><th>Branch</th><th>Average Package (LPA)</th></tr></thead>
+  <tbody>
+  <tr><td>CE</td><td>9.37</td></tr>
+  <tr><td>CSE</td><td>9.65</td></tr>
+  <tr><td>ECE</td><td>9.18</td></tr>
+  <tr><td>EE</td><td>8.58</td></tr>
+  <tr><td>IT</td><td>8.74</td></tr>
+  <tr><td>ME</td><td>9.08</td></tr>
+  </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Top Recruiting Companies</h2>
+  <table>
+  <thead><tr><th>Company</th><th>Students Hired</th></tr></thead>
+  <tbody>
+  <tr><td>Amazon</td><td>23</td></tr>
+  <tr><td>Wipro</td><td>22</td></tr>
+  <tr><td>Samsung</td><td>20</td></tr>
+  <tr><td>Adobe</td><td>19</td></tr>
+  <tr><td>TCS</td><td>19</td></tr>
+  </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Top Package Holders</h2>
+  <table>
+  <thead><tr><th>Student</th><th>Branch</th><th>Company</th><th>Package (LPA)</th></tr></thead>
+  <tbody>
+  <tr><td>Sneha Gupta</td><td>CE</td><td>Wipro</td><td>16.10</td></tr>
+  <tr><td>Sumit Sharma</td><td>CSE</td><td>Infosys</td><td>15.67</td></tr>
+  <tr><td>Rahul Pillai</td><td>EE</td><td>HCL</td><td>15.18</td></tr>
+  <tr><td>Meera Patel</td><td>ME</td><td>TCS</td><td>15.15</td></tr>
+  <tr><td>Shreya Joshi</td><td>IT</td><td>Amazon</td><td>14.84</td></tr>
+  </tbody>
+  </table>
+</section>
+
+<div class="footer">
+  Generated on 2026-07-14 using Python by KAKUL RAJPUT<br>
+  Programming with Python &middot; AKGEC Summer Internship 2026
+</div>
+</body>
+</html>
